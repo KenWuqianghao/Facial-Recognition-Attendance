@@ -1,5 +1,3 @@
-#! /usr/bin/python
-
 # import the necessary packages
 from imutils.video import VideoStream
 from imutils.video import FPS
@@ -8,11 +6,13 @@ import imutils
 import pickle
 import time
 import cv2
+import sys
+import os
 
 #Initialize 'currentname' to trigger only when a new person is identified.
 currentname = "unknown"
 #Determine faces from encodings.pickle file model created from train_model.py
-encodingsP = "encodings.pickle"
+encodingsP = os.path.join(sys.path[0], "encodings.pickle")
 
 # load the known faces and embeddings along with OpenCV's Haar
 # cascade for face detection
@@ -23,7 +23,7 @@ data = pickle.loads(open(encodingsP, "rb").read())
 # Set the ser to the followng
 # src = 0 : for the build in single web cam, could be your laptop webcam
 # src = 2 : I had to set it to 2 inorder to use the USB webcam attached to my laptop
-vs = VideoStream(src=2,framerate=10).start()
+vs = VideoStream(src=0,framerate=10).start()
 #vs = VideoStream(usePiCamera=True).start()
 time.sleep(2.0)
 

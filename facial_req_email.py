@@ -1,5 +1,3 @@
-#! /usr/bin/python
-
 # import the necessary packages
 from imutils.video import VideoStream
 from imutils.video import FPS
