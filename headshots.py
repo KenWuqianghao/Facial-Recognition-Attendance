@@ -3,8 +3,7 @@ import os
 import sys
 
 # initialize naems, camera, and image counter
-# names = ['Nicolas', 'Matteo', 'Lorenzo', 'Erica', 'Rodrigo', 'Minje', 'Kim', 'Georgios', 'Niccolo', 'Paolo', 'Lucia', 'Matilde', 'Rafaela', 'Qianghao', 'Sara']
-names = ['IDK']
+names = ['Alice', 'Bob', 'Charlotte', 'David', 'Elliot', 'Fiona']
 cam = cv2.VideoCapture(0)
 
 cv2.namedWindow("press space to take a photo", cv2.WINDOW_NORMAL)
