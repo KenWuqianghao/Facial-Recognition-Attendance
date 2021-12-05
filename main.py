@@ -1,8 +1,7 @@
 from facial_req import facial_req
+from send_email import send_email
 
 import datetime
-import send_email
-import send_api
 
 complete_names = ['Alice', 'Bob', 'Charlotte', 'David', 'Elliot', 'Fiona']
 
@@ -20,13 +19,10 @@ while True:
 		present_names = facial_req()
 		type = 'present'
 		send_email(present_names, type)
-		send_api(present_names, type)
 
 		tardy_names = run_model(tardy_names) 
 		type = 'tardy' 
-		send_email(tardy_names,type) 
-		call_api(tardy_name,type) 
-
+		send_email(tardy_names,type)
 		absent_names = [] 
 
 		for name in complete_names:
@@ -38,5 +34,4 @@ while True:
 				absent_names.append(name) 
 
 		type = 'absent' 
-		send_email(tardy_names) 
-		call_api(tardy_names)
+		send_email(tardy_names)
