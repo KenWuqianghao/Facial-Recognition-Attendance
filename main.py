@@ -5,15 +5,13 @@ import datetime
 
 complete_names = ['Alice', 'Bob', 'Charlotte', 'David', 'Elliot', 'Fiona']
 
-start_time = ['09:00', '10:15', '11:30', '12:45', '13:30', '14:40']
+start_time = ['18:7', '10:15', '11:30', '12:45', '13:30', '14:40']
 
 currentDT = datetime.datetime.now()
-print ("Current Hour is: %d" % currentDT.hour)
-print ("Current Minute is: %d" % currentDT.minute)
 
 while True:
 	currentDT = datetime.datetime.now()
-	time = str(currentDT.hour) + ':' + str(currentDt.minute)
+	time = str(currentDT.hour) + ':' + str(currentDT.minute)
 
 	if time in start_time:
 		present_names = facial_req()

@@ -111,3 +111,5 @@ def facial_req():
 	vs.stop()
 
 	return(names)
+
+facial_req()
