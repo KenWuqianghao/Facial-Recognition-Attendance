@@ -1,5 +1,5 @@
 # Raspberry Pi 4 Facial Recognition
-This is the code I wrote/editted for my computer science IA. The goal of this project is to use a raspberry pi to automatically scan students' faces and keep a running record of the names of the students entering the classroom on time, tardy and absent. Ultimately, sending the list of students to the teacher for attendance. The faces used in this project are not real students due to the violation of GDPR, therefore, this k[aggle celebrity face dataset](https://www.kaggle.com/hereisburak/pins-face-recognition) is used. 
+This is the code I wrote/editted for my computer science IA. The goal of this project is to use a raspberry pi to automatically scan students' faces and keep a running record of the names of the students entering the classroom on time, tardy and absent. Ultimately, sending the list of students to the teacher for attendance. The faces used in this project are not real students due to the violation of GDPR, therefore, this [kaggle celebrity face dataset](https://www.kaggle.com/hereisburak/pins-face-recognition) is used. 
 
 ## How to Use It
 1. Clone this repo onto your local machine(raspberry pi)
