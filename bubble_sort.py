@@ -1,4 +1,4 @@
-def bubbleSort(arr):
+def bubble_sort(arr):
     n = len(arr)
  
     # Traverse through all array elements

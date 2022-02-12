@@ -3,7 +3,7 @@ def send_email(names, type):
     import smtplib
 
     username = ("wuq@asmilan.org")
-    password = ("***************")
+    password = ("@Kenwu20040217")
 
     fake_from = "facial-recognition-attendance@auto.com"
     fake_name = "Facial Recognition Attendance Machine"
@@ -15,8 +15,8 @@ def send_email(names, type):
     names = bubble_sort(names)
 
     content = "The following students are {} \n".format(type)
-    for name in names():
-        content + str(name) + '\n'
+    for name in names:
+        content = content + str(name) + '\n'
 
     message = f"From: {fake_name} <{fake_from}>\nTo: {to_name} <{to_email}>\nSubject: {subject}\n\n{content}"
 
@@ -25,3 +25,7 @@ def send_email(names, type):
     server.login(username, password)
     server.sendmail(username, to_email, message.encode())
     server.close()
+
+names = ['Ken', 'Nick']
+type = 'present'
+send_email(names, type)

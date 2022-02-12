@@ -16,9 +16,5 @@ def main():
         # rename() function will
         # rename all the files
         os.rename(src, dst)
- 
-# Driver Code
-if __name__ == '__main__':
-     
-    # Calling main() function
-    main()
+
+main()

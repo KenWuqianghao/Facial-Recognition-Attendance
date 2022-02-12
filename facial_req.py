@@ -32,7 +32,7 @@ def facial_req():
 	fps = FPS().start()
 	
 	start_time = time.time()
-	max_time = 600
+	max_time = 10
 
 	# loop over frames from the video file stream
 	while (time.time() - start_time) < max_time:
@@ -79,7 +79,8 @@ def facial_req():
 					print(currentname)
 
 			# update the list of names
-			names.append(name)
+			if current_name not in names:
+				names.append(current_name)
 
 		# loop over the recognized faces
 		for ((top, right, bottom, left), name) in zip(boxes, names):
@@ -109,5 +110,7 @@ def facial_req():
 	# do a bit of cleanup
 	cv2.destroyAllWindows()
 	vs.stop()
-
+	print(names)
 	return(names)
+
+facial_req()
