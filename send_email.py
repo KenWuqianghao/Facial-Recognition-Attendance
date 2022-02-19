@@ -3,7 +3,7 @@ def send_email(names, type):
     import smtplib
 
     username = ("wuq@asmilan.org")
-    password = ("@Kenwu20040217")
+    password = ("**************")
 
     fake_from = "facial-recognition-attendance@auto.com"
     fake_name = "Facial Recognition Attendance Machine"
