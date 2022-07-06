@@ -10,3 +10,5 @@ conda env create -f environment.yml
 ```
 4. Modify the email sender, receiver, and the time the model is running
 5. Run main.py
+
+[Here](https://drive.google.com/file/d/19n9mDA6z-8FbnIklpfJ3xLX_XINBU29d/view?usp=sharing) is a link to my writings and code formatted as IB requested.
